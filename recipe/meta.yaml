@@ -1,14 +1,14 @@
 {% set name = "importlib" %}
-{% set version = "1.0.3" %}
-{% set checksum = "01fc0a2a1e01990a97b096615c11328fa4306ced1733c98d884160387760d479" %}
+{% set version = "1.0.4" %}
+{% set checksum = "b6ee7066fea66e35f8d0acee24d98006de1a0a8a94a8ce6efe73a9a23c8d9826" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  fn: {{ name }}-{{ version }}.zip
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.zip
   sha256: {{ checksum }}
 
 build:
@@ -28,10 +28,10 @@ test:
     - importlib
 
 about:
-  # Had no home page. So pointed it to PyPI.
-  home: https://pypi.python.org/pypi/importlib
-  # Version unspecified. Presumably matches that of Python 2.7.
-  license: PSF
+  home: https://github.com/brettcannon/importlib
+  license: PSF2
+  license_family: PSF
+  license_file: LICENSE
   summary: Backport of importlib.import_module() from Python 2.7
 
 extra:

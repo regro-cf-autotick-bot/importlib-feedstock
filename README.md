@@ -1,9 +1,9 @@
 About importlib
 ===============
 
-Home: https://pypi.python.org/pypi/importlib
+Home: https://github.com/brettcannon/importlib
 
-Package license: PSF
+Package license: PSF2
 
 Feedstock license: BSD 3-Clause
 
